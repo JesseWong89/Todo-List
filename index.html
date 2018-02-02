@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practical Todos</title>
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      
+    <h1>Profile Page</h1>
+    <div class="form-group">
+      <div>
+        <button onclick="handlers.toggleAll()" class="btn btn-info"> Toggle All </button>
+      </div>
+  
+      <br>
+      
+      <div>
+        <button onclick="handlers.addTodo()" class="btn btn-primary">Add</button>
+        <input id="addTodoTextInput" type="number">
+      </div>
+      
+      <br>
+      
+      <div>
+        <button onclick="handlers.changeTodo()" class="btn btn-success">Change Todo</button>
+        <input id="changeTodoPositionInput" type="number">
+        <input id="changeTodoTextInput" type="text">
+      </div>
+      
+      <br>
+      
+      <div>
+        <button onclick="handlers.deleteTodo()" class="btn btn-danger">Delete Todo</button>
+        <input id="deleteTodoPositionInput" type="text">
+      </div>
+      
+      <br>
+      
+      <div>
+        <button onclick="handlers.toggleCompleted()" class="btn btn-info">Toggle Completed</button>
+        <input id="toggleCompletedPositionInput" type="number">
+      </div>
+      
+    <br>
+      
+    <!-- <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <br>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <br>
+    <div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+    </div>
+    <!-- Change the classes from to 'form-group' and the input type classes to 'form-control' -->
+    <!-- 'btn btn-success' changes the button colors to green. Try and see what other colors you can change the buttons to by replacing success -->
+    
+  <!--<div class="form-group">
+    <label for="exampleTextarea">Write a short description about yourself:</label>
+    <br>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button> -->
+    
+    
+    <ul>
+    </ul>
+  </div>
+    </div>
+    <script src="/client.js"></script>
+  </body>
+</html>
